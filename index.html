@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/custom.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#edefef]">
+    <header class="border-b border-gray-200 bg-white">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 lg:px-8"
+      >
+        <div class="flex items-center space-x-1 font-bold">Brand</div>
+
+        <div class="hidden md:flex flex-1 mx-6 max-w-lg">
+          <div class="flex border border-gray-300 rounded-full w-full">
+            <input
+              type="text"
+              placeholder="Search . . ."
+              class="flex-1 px-4 py-2 text-sm focus:outline-none rounded-l-full"
+            />
+            <button class="px-4 text-gray-500 hover:text-gray-700">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-6">
+          <div class="hidden sm:flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-telephone"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+              />
+            </svg>
+            <div>
+              <p class="text-xs text-gray-500">Call Us Now</p>
+              <p class="font-bold text-sm">+88-578-667-980</p>
+            </div>
+          </div>
+
+          <div class="relative flex items-center space-x-1 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+              />
+            </svg>
+            <span class="text-sm">Wishlist</span>
+            <span
+              class="absolute -top-2 -right-3 bg-yellow-300 text-xs font-bold px-1 rounded-full"
+              >1</span
+            >
+          </div>
+
+          <div class="flex items-center space-x-1 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+              />
+            </svg>
+            <span class="text-sm">Cart(0)</span>
+          </div>
+
+          <button id="menuBtn" class="md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="max-w-7xl mx-auto py-10 px-4 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-0">
+          <div class="bg-white rounded-lg shadow-sm p-6 mt-4 max-h-[365px]">
+            <h3 class="font-semibold text-lg mb-4">Categories</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="hover:text-orange-500 cursor-pointer">
+                Fashion Apparel
+              </li>
+              <li class="hover:text-orange-500 cursor-pointer">
+                Wellness & Beauty
+              </li>
+              <li class="hover:text-orange-500 cursor-pointer">Home Decor</li>
+              <li class="hover:text-orange-500 cursor-pointer">Eco Living</li>
+              <li class="hover:text-orange-500 cursor-pointer">
+                Luxury Accessories
+              </li>
+              <li class="hover:text-orange-500 cursor-pointer">
+                Outdoor Lifestyle
+              </li>
+              <li class="hover:text-orange-500 cursor-pointer">
+                Travel Essentials
+              </li>
+            </ul>
+            <button
+              class="mt-6 w-full border border-gray-300 rounded-lg py-2 text-gray-700 hover:bg-gray-50 transition"
+            >
+              All Categories
+            </button>
+          </div>
+
+          <div
+            class="md:col-span-2 relative rounded-lg overflow-hidden h-[400px]"
+          >
+            <img
+              src="./images/one-hero-img2.jpg"
+              alt="Organic Vegeta"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center px-6"
+            >
+              <h2 class="text-white font-bold text-3xl">
+                Exclusive Lifestyle Deals
+              </h2>
+              <p class="text-white text-xl">
+                Elevate your style & living spaces
+              </p>
+              <button
+                class="mt-4 bg-[#228B22] hover:bg-orange-600 text-white px-5 py-2 rounded-md w-max"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-sm p-6 mt-0 md:mt-4 max-h-[365px]"
+          >
+            <h3 class="font-semibold text-lg mb-4">Why Choose Us?</h3>
+
+            <div class="mb-4">
+              <h4 class="font-semibold text-gray-800">Exclusive Collections</h4>
+              <p class="text-gray-600 text-sm">
+                Curated fashion and lifestyle picks from premium designers.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h4 class="font-semibold text-gray-800">
+                Free Style Consultations
+              </h4>
+              <p class="text-gray-600 text-sm">
+                Get personalized styling tips from our lifestyle experts.
+              </p>
+            </div>
+
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-800">Global Brands</h4>
+              <p class="text-gray-600 text-sm">
+                Access 500+ luxury and sustainable lifestyle brands.
+              </p>
+            </div>
+
+            <button
+              class="bg-[#228B22] hover:bg-blue-800 text-white w-full py-2 rounded-md"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-4 py-10">
+        <h2 class="text-xl font-semibold mb-6">
+          Top categories, exceptional deals
+        </h2>
+
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="20"
+          slides-per-view="4"
+        >
+          <swiper-slide>
+            <div
+              class="flex-shrink-0 w-full bg-white rounded-xl shadow p-5 flex flex-col items-center text-center"
+            >
+              <img
+                src="./images/product-1.jpg"
+                alt="GlowLayer"
+                class="min-h-[300px] object-contain mb-4"
+              />
+              <p class="text-gray-800 mb-3">GlowLayer Crop Top</p>
+              <button
+                class="bg-[#228B22] hover:bg-orange-600 text-white px-5 py-2 rounded-md"
+              >
+                Shop now
+              </button>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex-shrink-0 w-full bg-white rounded-xl shadow p-5 flex flex-col items-center text-center"
+            >
+              <img
+                src="./images/product-2.jpg"
+                alt="CloudFit"
+                class="min-h-[300px] object-contain mb-4"
+              />
+              <p class="text-gray-800 mb-3">CloudFit Joggers</p>
+              <button
+                class="bg-[#228B22] hover:bg-orange-600 text-white px-5 py-2 rounded-md"
+              >
+                Shop now
+              </button>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex-shrink-0 w-full bg-white rounded-xl shadow p-5 flex flex-col items-center text-center"
+            >
+              <img
+                src="./images/product-3.jpg"
+                alt="CloudFit"
+                class="min-h-[300px] object-contain mb-4"
+              />
+              <p class="text-gray-800 mb-3">CloudFit Joggers</p>
+              <button
+                class="bg-[#228B22] hover:bg-orange-600 text-white px-5 py-2 rounded-md"
+              >
+                Shop now
+              </button>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex-shrink-0 w-full bg-white rounded-xl shadow p-5 flex flex-col items-center text-center"
+            >
+              <img
+                src="./images/product-1.jpg"
+                alt="CloudFit"
+                class="min-h-[300px] object-contain mb-4"
+              />
+              <p class="text-gray-800 mb-3">CloudFit Joggers</p>
+              <button
+                class="bg-[#228B22] hover:bg-orange-600 text-white px-5 py-2 rounded-md"
+              >
+                Shop now
+              </button>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div
+              class="flex-shrink-0 w-full bg-white rounded-xl shadow p-5 flex flex-col items-center text-center"
+            >
+              <img
+                src="./images/product-2.jpg"
+                alt="GlowLayer"
+                class="min-h-[300px] object-contain mb-4"
+              />
+              <p class="text-gray-800 mb-3">GlowLayer Crop Top</p>
+              <button
+                class="bg-[#228B22] hover:bg-orange-600 text-white px-5 py-2 rounded-md"
+              >
+                Shop now
+              </button>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </section>
+      <section class="max-w-7xl mx-auto px-4 py-10">
+        <!-- Heading -->
+        <h2 class="text-xl font-semibold mb-6">Why Choose Us</h2>
+
+        <!-- Cards Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img
+              src="./images/eco.avif"
+              alt="Eco Friendly"
+              class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4"
+            >
+              <h3 class="text-white text-lg font-semibold">
+                Eco-Friendly Products
+              </h3>
+              <a
+                href="#"
+                class="text-[#F5F5DC] text-sm font-medium mt-1 hover:underline"
+                >Read more</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img
+              src="./images/fast.avif"
+              alt="Fast Shipping"
+              class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4"
+            >
+              <h3 class="text-white text-lg font-semibold">
+                Fast & Reliable Shipping
+              </h3>
+              <a
+                href="#"
+                class="text-[#F5F5DC] text-sm font-medium mt-1 hover:underline"
+                >Read more</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <!-- Card 3 (Updated Image) -->
+          <div class="relative rounded-xl overflow-hidden shadow-lg group">
+            <img
+              src="./images/ql.jpg"
+              alt="Quality Guarantee Badge"
+              class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4"
+            >
+              <h3 class="text-white text-lg font-semibold">
+                Quality Guaranteed
+              </h3>
+              <a
+                href="#"
+                class="text-[#F5F5DC] text-sm font-medium mt-1 hover:underline"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Heading -->
+        <h2 class="text-xl font-semibold mb-8">What Our Customers Say</h2>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="./images/t1.jpg"
+              alt="Customer"
+              class="w-16 h-16 rounded-full border-4 border-[#228B22] mb-4"
+            />
+            <p class="text-gray-600 italic">
+              "Absolutely love the eco-friendly products! The quality is
+              top-notch and the shipping was super fast."
+            </p>
+            <h4 class="mt-4 font-semibold text-gray-800">Sarah Johnson</h4>
+            <span class="text-sm text-gray-500">Small Business Owner</span>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="./images/t2.jpg"
+              alt="Customer"
+              class="w-16 h-16 rounded-full border-4 border-[#228B22] mb-4"
+            />
+            <p class="text-gray-600 italic">
+              "The quality guarantee really gave me peace of mind. Everything I
+              ordered exceeded my expectations!"
+            </p>
+            <h4 class="mt-4 font-semibold text-gray-800">Michael Lee</h4>
+            <span class="text-sm text-gray-500">Restaurant Owner</span>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="./images/t3.jpg"
+              alt="Customer"
+              class="w-16 h-16 rounded-full border-4 border-[#228B22] mb-4"
+            />
+            <p class="text-gray-600 italic">
+              "Fast delivery and amazing customer service. I’ll definitely be
+              ordering again!"
+            </p>
+            <h4 class="mt-4 font-semibold text-gray-800">Emily Carter</h4>
+            <span class="text-sm text-gray-500">Event Planner</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+          <!-- Heading -->
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            Subscribe to Our Newsletter
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Get the latest updates on eco-friendly products, exclusive deals,
+            and more.
+          </p>
+
+          <!-- Form -->
+          <form
+            id="newsletterForm"
+            class="flex flex-col sm:flex-row items-center gap-3 justify-center"
+          >
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="w-full sm:w-96 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-[#228B22] text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+            >
+              Subscribe
+            </button>
+          </form>
+
+          <!-- Message -->
+          <p id="message" class="mt-4 text-sm"></p>
+        </div>
+      </section>
+      <footer class="bg-[#228B22] text-gray-300 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div>
+              <h3 class="text-[#F5F5DC] text-lg font-semibold mb-4">Our Brand</h3>
+              <p class="text-[#F5F5DC] text-sm">
+                Creating quality eco-friendly products for a better future. 🌱
+              </p>
+            </div>
+
+            <!-- Links -->
+            <div>
+              <h3 class="text-[#F5F5DC] text-lg font-semibold mb-4">Quick Links</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-[#F5F5DC]">Home</a></li>
+                <li><a href="#" class="hover:text-[#F5F5DC]">Shop</a></li>
+                <li><a href="#" class="hover:text-[#F5F5DC]">About Us</a></li>
+                <li><a href="#" class="hover:text-[#F5F5DC]">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div>
+              <h3 class="text-[#F5F5DC] text-lg font-semibold mb-4">
+                Customer Service
+              </h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-[#F5F5DC]">FAQ</a></li>
+                <li>
+                  <a href="#" class="hover:text-[#F5F5DC]">Shipping & Returns</a>
+                </li>
+                <li><a href="#" class="hover:text-[#F5F5DC]">Privacy Policy</a></li>
+                <li>
+                  <a href="#" class="hover:text-[#F5F5DC]">Terms & Conditions</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+              <h3 class="text-[#F5F5DC] text-lg font-semibold mb-4">Follow Us</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="hover:text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="hover:text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="hover:text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-youtube"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Bar -->
+          <div
+            class="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-[#F5F5DC]"
+          >
+            © 2025 Your Brand Name. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      const swiperEl = document.querySelector("swiper-container");
+      Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+      });
+      swiperEl.initialize();
+    </script>
+    <script>
+      const form = document.getElementById("newsletterForm");
+      const emailInput = document.getElementById("email");
+      const message = document.getElementById("message");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const email = emailInput.value.trim();
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (!email.match(emailPattern)) {
+          message.textContent = "Please enter a valid email address.";
+          message.className = "mt-4 text-sm text-red-500";
+        } else {
+          message.textContent = "🎉 Thank you for subscribing!";
+          message.className = "mt-4 text-sm text-green-500";
+          emailInput.value = "";
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
